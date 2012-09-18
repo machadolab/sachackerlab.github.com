@@ -31,6 +31,6 @@ Dir.glob('*.html') do |item|
     end 
   end
   
-  puts out
+  File.open(item, 'w') { |file| file.write(out) }
   
 end
